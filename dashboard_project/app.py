@@ -8,7 +8,8 @@ st.markdown("Use the dropdowns below to explore charts by region, country, indus
 
 # Base directory where your image folders are located
 # base_dir = "/home/acct/schaf/team/yiyid/projects/data_vit/Outfiles"
-base_dir = "."
+base_dir = os.path.dirname(__file__) 
+
 
 
 # Folder options for dropdown
@@ -25,6 +26,7 @@ selected_folder = folder_options[selected_folder_label]
 
 # Load image files from the selected folder
 image_dir = os.path.join(base_dir, selected_folder)
+
 image_files = sorted([f for f in os.listdir(image_dir) if f.endswith(".png")])
 
 # Second dropdown: specific image
