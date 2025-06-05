@@ -7,7 +7,9 @@ st.title("Interactive Chart Viewer")
 st.markdown("Use the dropdowns below to explore charts by region, country, industry, or SDG/BBK topic.")
 
 # Base directory where your image folders are located
-base_dir = "/home/acct/schaf/team/yiyid/projects/data_vit/Outfiles"
+# base_dir = "/home/acct/schaf/team/yiyid/projects/data_vit/Outfiles"
+base_dir = "."
+
 
 # Folder options for dropdown
 folder_options = {
