@@ -34,6 +34,7 @@ if image_files:
     selected_image = st.selectbox("Choose a chart:", image_files)
     image_path = os.path.join(image_dir, selected_image)
     image = Image.open(image_path)
-    st.image(image, caption=selected_image, use_column_width=True)
+    st.image(image, caption=selected_image, use_container_width=True)
+
 else:
     st.warning("No images found in the selected folder.")
